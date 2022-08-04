@@ -28,6 +28,11 @@
 
   </extensions>
 
-  <act
+  <actions>
+    <action class="com.ooooo.action.WebBrowserAction" id="com.ooooo.action.WebBrowserAction">
+      <add-to-group group-id="ToolsMenu" anchor="last"/>
+      <override-text place="MainMenu" text="WebBrowser"/>
+    </action>
+  </actions>
 
 </idea-plugin>
