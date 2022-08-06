@@ -5,7 +5,7 @@
       <option name="executionName"/>
       <option name="externalProjectPath" value="$PROJECT_DIR$"/>
       <option name="externalSystemIdString" value="GRADLE"/>
-      <option name="scriptParameters" value="-Pintellij.autoReloadPlugins=true"/>
+      <option name="scriptParameters" value="-Pintellij.autoReloadPlugins"/>
       <option name="taskDescriptions">
         <list/>
       </option>
@@ -14,7 +14,7 @@
           <option value="runIde"/>
         </list>
       </option>
-      <option name="vmOptions" value=""/>
+      <option name="vmOptions" value="--add-exports java.base/jdk.internal.vm=ALL-UNNAMED"/>
     </ExternalSystemSettings>
     <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
     <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>

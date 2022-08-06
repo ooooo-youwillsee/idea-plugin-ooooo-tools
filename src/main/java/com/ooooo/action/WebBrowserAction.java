@@ -26,13 +26,15 @@ public class WebBrowserAction extends AnAction {
 
     FileEditorManager fileEditorManager = FileEditorManager.getInstance(project);
 
-    String fileName = RandomStringUtils.random(6);
+    String fileName = RandomStringUtils.randomAlphabetic(6);
+    WebBrowser webBrowser = new WebBrowserImpl();
+    JComponent component = webBrowser.getComponent();
+    webBrowser.open(WebBrowser.DEFAULT_URL);
 
-    WebBrowserJPanel webBrowserJPanel = new WebBrowserJPanel();
     UIComponentVirtualFile uiComponentVirtualFile = new UIComponentVirtualFile(fileName, new UIComponentVirtualFile.Content() {
       @Override
       public @NotNull JComponent createComponent() {
-        return webBrowserJPanel;
+        return component;
       }
 
       @Override
